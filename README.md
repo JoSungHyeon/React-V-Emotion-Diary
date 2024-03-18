@@ -33,7 +33,8 @@ SPA 방식 페이지 이동 -> 필요한 요소만 교체
 
 ---
 
-React Router 라이브러리 사용
+React Router 라이브러리 사용<br>
+(npm i react-router-dom)
 
 1. Link
 클릭 시 바로 이동하는 로직 구현 시에 사용<br>

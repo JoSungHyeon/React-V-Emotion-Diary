@@ -1,8 +1,40 @@
-# React + Vite
+# React + Vite Emotion-Diary
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+페이지라우팅의 원리
 
-Currently, two official plugins are available:
+1. 브라우저에서 서버에게 경로 요청
+2. 서버는 브라우저에게 요청된 경로 반환
+3. 브라우저는 반환된 경로 보여줌
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+Multi Page Application (MPA) -> 여러개의 페이지를 가지고 반환
+
+MPA 단점 : 페이지 이동이 매끄럽지 않고 비효율적임, 다수 사용자 접속시 부하가 심해짐
+
+Server Side Rendering -> 서버측에서 미리 완성된 페이지를 보내주는 것
+
+---
+
+React.js는 MPA 방식을 따르지 않음 ( 쾌적한 페이지 이동 제공이 어려움 )
+
+Single Page Application (SPA) -> 페이지가 1개, 서버는 무조건 해당 페이지만 보내줌
+모든 자바스크립트 파일을 Bundling(묶다)해서 번들 파일을 브라우저로 보내줌
+번들링 과정은 VITE가 함 --> 비트를 통해 번들파일을 브라우저로 보냄
+
+SPA 장점 : 페이지 이동이 매끄럽고 효율적임, 다수의 사용자가 접속해도 크게 상관 없음
+
+Client Side Rendering -> 브라우저에서 직접 자바스크립트 파일을 실행하여 화면을 렌더링함
+
+---
+
+MPA 방식 페이지 이동 -> 모든 요소 교체
+SPA 방식 페이지 이동 -> 필요한 요소만 교체
+
+---
+
+React Router 라이브러리 사용
+
+
+
+

@@ -86,6 +86,8 @@ LocalStorage<br>
 
 ---
 
+vercel 사용 배포했음!
+https://emotion-diary-five.vercel.app/
 
 ---
 

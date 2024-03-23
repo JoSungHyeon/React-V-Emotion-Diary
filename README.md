@@ -66,38 +66,16 @@ Public 폴더에 넣을 경우 url로 이미지를 불러올 수 있지만 최�
 
 ---
 
-웹스토리지 사용<br>
-웹 스트로지란?
-브라우저에 기본적으로 내장되어 있는 데이터베이스<br>
-자바스크립트 내장함수 만으로 접근 가능<br>
+개발 순서<br>
 
-ex)<br>
-값을 저장 : localStorage.setItem(key, value)<br>
-값을 꺼냄 : localStorage.getItem(key)
+개발 순서는 사람마다 다름<br>
 
-SessionStorage<br>
-브라우저 탭 별로 데이터를 보관<br>
-탭이 종료되기 전에는 데이터 유지(새로고침)<br>
-탭이 종료되거나 꺼지면 데이터 삭제
-<br>
-LocalStorage<br>
-사이트 주소별로 데이터 보관<br>
-사용자가 직접 삭제하기 전까진 데이터 보관
-
----
-
-vercel 사용 배포했음!
-https://emotion-diary-taupe.vercel.app/
-
----
-
-누군가를 가르칠 정도로 코드 익히기
-
-블로그에 글 작성해보기
-
----
-
-새로운 키워드 수집
-
-기회가 된다면 세미나 참석해보기!!
-
+1. 라우트 설치
+2. 페이지 라우팅 설정
+3. 이미지 유틸 추가
+4. 공통 컴포넌트 구현 (버튼, 헤더)
+5. mockData 를 리듀서로 저장(임시 데이터)
+6. 생성, 수정, 삭제 함수 생성 후 타입지정 -> 리듀서 함수에서 스위치문 사용
+7. createContext 사용 stateContext, dispatchContext 생성 후 route를 Provider로 감싸줌
+8. HOME 페이지의 UI 구현 (DiaryList, DiaryItem 컴포넌트 사용)
+9. HOME 페이지의 월변경 기능 함수 생성

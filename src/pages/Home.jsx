@@ -21,7 +21,7 @@ const Home = () => {
 
     const monthlyData = getMonthlyData(pivotDate, data);
 
-    usePageTitle("감정 일기장")
+    usePageTitle("SH-EmotionDiary")
 
     const onIncreaseMonth = () => {
         setPivotDate(

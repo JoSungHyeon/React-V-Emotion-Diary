@@ -12,7 +12,7 @@ const Diary = () => {
 
     const curDiaryItem = useDiary(params.id);
 
-    usePageTitle(`${params.id}번 일기`)
+    usePageTitle(`SH-EmotionDiary`)
 
     if(!curDiaryItem) {
         return <div>데이터 로딩중...</div>

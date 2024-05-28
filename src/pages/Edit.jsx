@@ -13,7 +13,7 @@ const Edit = () => {
     const { onDelete, onUpdate } = useContext(DiaryDispatchContext);
     const curDiaryItem = useDiary(params.id);
 
-    usePageTitle(`${params.id}번 일기 수정`);
+    usePageTitle(`SH-EmotionDiary`);
 
     const onClickDelete = () => {
         if(

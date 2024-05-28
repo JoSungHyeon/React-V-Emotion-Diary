@@ -10,7 +10,7 @@ const New = () => {
     const { onCreate } = useContext(DiaryDispatchContext);
     const nav = useNavigate();
 
-    usePageTitle("새 일기 쓰기");
+    usePageTitle("SH-EmotionDiary");
 
     const onSubmit = (input) => {
         onCreate(
